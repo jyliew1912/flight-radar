@@ -44,30 +44,17 @@ Planning a trip often comes with two major frustrations:
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/](https://github.com/)<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/jyliew1912/flight-radar.git
+cd flight-radar
 ```
 
-### 2. Create and Activate a Virtual Environment
 
-* **macOS / Linux:**
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-* **Windows:**
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-### 3. Install Dependencies
+### 2. Install Dependencies
 ```bash
 pip install streamlit selenium undetected-chromedriver beautifulsoup4 pandas
 ```
 
-### 4. Run the Application
+### 3. Run the Application
 ```bash
 streamlit run app.py
 ```
