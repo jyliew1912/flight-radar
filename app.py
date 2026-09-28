@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime, timedelta
 import json
-import sqlite3 # 依據你的資料庫類型調整
+import sqlite3
 from scraper import main
 import os
 
