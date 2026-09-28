@@ -12,12 +12,11 @@ Built with **Python**, **Selenium (`undetected-chromedriver`)**, **BeautifulSoup
 
 ## 📽️ Interactive Demonstration
 
-[![Flight Radar Demo](https://img.youtube.com/vi/YlMGw_ylDjo/maxresdefault.jpg)](https://youtu.be/YlMGw_ylDjo)
+[![Flight Radar Demo](https://github.com/user-attachments/assets/675595b8-f8d0-4323-ba06-bf5729be4abb)](https://youtu.be/YlMGw_ylDjo)
 
-> 📹 **[Click here to watch the full demo on YouTube](https://youtu.be/YlMGw_ylDjo)**  
+> 📹 **[Click here to watch the full demo walkthrough on YouTube (https://youtu.be/YlMGw_ylDjo)](https://youtu.be/YlMGw_ylDjo)**  
 > *Walkthrough demonstrating multi-date batch crawling, dynamic React UI interaction, and real-time SQLite filtering.*
 
-*Demonstrating multi-date automated batch scraping, dynamic React filter interactions, and instant SQLite query filtering.*
 
 ## 💡 Motivation & Philosophy
 
