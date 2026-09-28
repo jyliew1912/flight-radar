@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Database & Scraper Artifacts
+airlines.db
+airlines.db-journal
+*.log
+chromedriver*
+
+# Virtual Environments
+venv/
+env/
+.env
+
+# OS & IDE metadata
+.DS_Store
+.vscode/
+.idea/

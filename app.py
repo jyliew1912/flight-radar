@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
 import sqlite3 # 依據你的資料庫類型調整
 from scraper import main
@@ -73,7 +73,8 @@ if current_page == "✈️ Flight Search":
 
         row2_col1, row2_col2, row2_col3, row2_col4 = st.columns(4)
         with row2_col1:
-            start_date = st.date_input("Departure Date Search", value=datetime(2027, 2, 25))
+            default_search_date = datetime.today() + timedelta(days=7)
+            start_date = st.date_input("Departure Date Search", value=default_search_date)
         with row2_col2:
             days_to_scrape = st.number_input("Search Consecutive Days", min_value=1, max_value=10, value=5)
         with row2_col3:
@@ -273,21 +274,19 @@ elif current_page == "⛁ History Database":
                 )
 
             with col_right:
-                with st.popover("🗑️ Delete Database & Reset", use_container_width=True):
-                    st.error("⚠️ Are you sure you want to delete the entire database? This will reset the table schema and delete all data.")
-                    if st.button("Confirm Delete & Reset", type="primary", use_container_width=True):
+                with st.popover("🗑️ Reset Database Records", use_container_width=True):
+                    st.warning("⚠️ This will permanently clear all recorded flight history.")
+                    if st.button("Confirm Table Truncation", type="primary", use_container_width=True):
                         try:
-                            db_path = 'airlines.db'
-
-                            if os.path.exists(db_path):
-                                os.remove(db_path)
-                            
+                            with sqlite3.connect('airlines.db') as conn:
+                                cursor = conn.cursor()
+                                cursor.execute("DELETE FROM posts;")
+                                conn.commit()
                             st.session_state['hidden_flight_ids'] = set()
-                            st.toast("✅ Database has been deleted and reset successfully.")
-
-                            st.rerun() 
+                            st.toast("✅ Flight records cleared successfully.")
+                            st.rerun()
                         except Exception as e:
-                            st.error(f"Failed to delete database file: {e}")
+                            st.error(f"Failed to reset records: {e}")
 
     except Exception as e:
         st.error(f"Failed to read from database: {e}")

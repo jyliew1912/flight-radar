@@ -53,7 +53,7 @@ def init_driver():
     options = uc.ChromeOptions()
     options.add_argument("--start-maximized")
     # options.add_argument("--headless=new")  # Close the browser window
-    driver = uc.Chrome(options=options, version_main=150, use_subprocess=True)
+    driver = uc.Chrome(options=options, version_main=153, use_subprocess=True)
     return driver
 
 def build_trip_url(d_city, a_city, d_date, quantity=1, currency="TWD"):
