@@ -10,6 +10,14 @@ An automated web intelligence tool and interactive analytics dashboard designed 
 
 Built with **Python**, **Selenium (`undetected-chromedriver`)**, **BeautifulSoup4**, and **Streamlit**, Flight Radar extracts authentic, baggage-inclusive airfares across multi-day travel windows and structures them into an interactive local query engine.
 
+## 📽️ Interactive Demonstration
+
+[![Flight Radar Demo](https://img.youtube.com/vi/YlMGw_ylDjo/maxresdefault.jpg)](https://youtu.be/YlMGw_ylDjo)
+
+> 📹 **[Click here to watch the full demo on YouTube](https://youtu.be/YlMGw_ylDjo)**  
+> *Walkthrough demonstrating multi-date batch crawling, dynamic React UI interaction, and real-time SQLite filtering.*
+
+*Demonstrating multi-date automated batch scraping, dynamic React filter interactions, and instant SQLite query filtering.*
 
 ## 💡 Motivation & Philosophy
 
