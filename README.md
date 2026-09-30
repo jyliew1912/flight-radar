@@ -5,6 +5,7 @@
 [![Engine: Selenium](https://img.shields.io/badge/Engine-Selenium%20%7C%20Undetected--Chromedriver-brightgreen.svg)](https://github.com/ultrafunkamsterdam/undetected-chromedriver)
 [![Database: SQLite3](https://img.shields.io/badge/Storage-SQLite3-blue.svg?logo=sqlite)](https://www.sqlite.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Build Status](https://github.com/jyliew1912/flight-radar/actions/workflows/ci.yml/badge.svg)](https://github.com/jyliew1912/flight-radar/actions/workflows/ci.yml)
 
 An automated web intelligence tool and interactive analytics dashboard designed to eliminate manual, day-by-day flight searches across dynamic Single-Page Applications (SPAs).
 
